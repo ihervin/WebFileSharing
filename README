@@ -1,0 +1,4 @@
+Simple Web File Sharing
+-------------------------
+
+Share your local file using web interface. You can define access rule using xml configuration file and integrate user using microsoft active directory.

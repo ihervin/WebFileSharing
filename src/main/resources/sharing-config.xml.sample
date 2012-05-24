@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sharing-config>
+	<ad-auth>
+		<domain>active directory domain</domain>
+		<ldap-host>LDAP://ldap-address.com</ldap-host>
+		<search-base>DC=xxx,DC=yyy,DC=com</search-base>
+	</ad-auth>
+	<share>
+		<name>Shared Folder 1</name>
+		<users>
+			<user>allowed_user_id_1</user>
+			<user>allowed_user_id_2</user>
+		</users>
+		<directories>
+			<directory>
+				<path>/home/xxx</path>
+				<!-- regex filter -->
+				<filter>\w.*.xml|\w.*S</filter>
+			</directory>
+		</directories>
+	</share>
+	<share>
+                <name>Shared Folder 2</name>
+                <users>
+                        <user>allowed_user_id_1</user>
+                        <user>allowed_user_id_3</user>
+                </users>
+                <directories>
+                        <directory>
+                                <path>/home/yyyy</path>
+                                <!-- regex filter -->
+                                <filter>\w.*.xml|\w.*S</filter>
+                        </directory>
+                </directories>
+        </share>
+</sharing-config>

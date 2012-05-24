@@ -1,0 +1,57 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>DownloadFile</servlet-name>
+  	<display-name>DownloadFile</display-name>
+  	<description></description>
+  	<servlet-class>org.codeautomate.webfs.servlet.DownloadFile</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ListDir</servlet-name>
+  	<display-name>ListDir</display-name>
+  	<description></description>
+  	<servlet-class>org.codeautomate.webfs.servlet.ListDir</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ListFile</servlet-name>
+  	<display-name>ListFile</display-name>
+  	<description></description>
+  	<servlet-class>org.codeautomate.webfs.servlet.ListFile</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Login</servlet-name>
+  	<display-name>Login</display-name>
+  	<description></description>
+  	<servlet-class>org.codeautomate.webfs.servlet.Login</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Logout</servlet-name>
+  	<display-name>Logout</display-name>
+  	<description></description>
+  	<servlet-class>org.codeautomate.webfs.servlet.Logout</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DownloadFile</servlet-name>
+  	<url-pattern>/DownloadFile</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ListDir</servlet-name>
+  	<url-pattern>/ListDir</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ListFile</servlet-name>
+  	<url-pattern>/ListFile</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Login</servlet-name>
+  	<url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Logout</servlet-name>
+  	<url-pattern>/Logout</url-pattern>
+  </servlet-mapping>
+</web-app>
